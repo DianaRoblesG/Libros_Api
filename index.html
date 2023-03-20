@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-LIBROS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#contenedor">MOSTRAR LIBROS</a>
+            <a href="#container">INFORMACIÓN</a>
+        </nav>
+
+        <section class="textos-header">
+            <h1>API HAPIBOOKS</h1>
+            <h2>Muestra los libros más leidos</h2>
+        </section>
+
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #fff;"></path>
+        </svg></div>
+    </header>
+
+    <main>
+        <!--section class="contenedor api-api">
+        <h2 class="titulo-f">FUNCIÓN DE LA API</h2>
+            <div class="contenedor-API">
+                <img src="img/ilustracion2.svg" alt="" class="imagen-b">
+                <div class="contenido-texto">
+                    <h3><span>1</span>Funciones:</h3>
+                    <p>HAPI Books es una API sobre libros. Da información sobre los libros más leídos</p>
+                </div>
+            </div>
+        </section-->
+    <!--div class="titulo">LOS LIBROS MÁS LEIDOS</div>
+    
+    <div class="img">
+        <img src="img/1.jpg" class="imagen1">
+        <img src="img/3.jpg" class="imagen3">
+    </div-->
+
+    <div class="container" id="cards">
+        <input class="btn-mostrar" type="button" value="1.-TOP 5" onclick="showBook()">
+        <input class="btn-mostrar1" type="button" value="2.-TOP 5" onclick="Bookshow()">
+        <input class="btn-mostrar2" type="button" value="3.-TOP 5" onclick="Buscar()">
+        <input class="btn-mostrar3" type="button" value="4.-TOP 5" onclick="show()">
+    </div>
+
+    <template id="mostrar-libros">
+        <div class="libros">
+            <section>
+                <div class="libro1" id="show">
+                    <div class="id">
+                        <h1>Libro: </h1>
+                        <p>id</p>
+                        <p>titulo</p>
+                        <p>autor</p>
+                    </div>
+                </div>
+
+                <div class="libro2" id="show">
+                    <div class="id">
+                        <h1>Libro: </h1>
+                        <p>id</p>
+                        <p>titulo</p>
+                        <p>autor</p>
+                    </div>
+                </div>
+
+                <div class="libro3" id="show">
+                    <div class="id">
+                        <h1>Libro: </h1>
+                        <p>id</p>
+                        <p>titulo</p>
+                        <p>autor</p>
+                    </div>
+                </div>
+
+                <div class="libro4" id="show">
+                    <div class="id">
+                        <h1>Libro: </h1>
+                        <p>id</p>
+                        <p>titulo</p>
+                        <p>autor</p>
+                    </div>
+                </div>
+
+                <div class="libro5" id="show">
+                    <div class="id">
+                        <h1>Libro: </h1>
+                        <p>id</p>
+                        <p>titulo</p>
+                        <p>autor</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </template>
+    <section id="container" class="contenedor">
+        <h2 class="titulo">IMPORTANCIA DE LA LECTURA</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img/5.jpg" alt="">
+                <div class="contenido-texto-card">
+                    <h4>1.-Ortografía</h4>
+                    <p>Permite mejorar nuestra ortografía. Ayuda al desarrollo y perfeccionamiento del lenguaje. Mejora la expresión oral y escrita y hace el lenguaje más fluido.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/5.jpg" alt="">
+                <div class="contenido-texto-card">
+                    <h4>2.-Hobbie</h4>
+                    <p>Puede practicarse en cualquier tiempo, lugar, edad y situación, no pongas pretextos, hasta en el trasporte público es posible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <br><br><br><br><br>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Escuela</h4>
+                <p>Universidad Tecnológica de Salamanca</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>612110403@utsalamanca.edu.mx</p>
+            </div>
+            <div class="content-foo">
+                <h4>Localización</h4>
+                <p>Salamanca, GTO.</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; ROBLES GARCÍA DIANA LIZBETH | ULTIMA ACTUALIZACIÓN: 15/MARZO/2023</h2>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
